@@ -7,7 +7,7 @@ def solve(a, b, target):
     while queue:
         x, y, path = queue.pop(0)
         
-        if y == target:
+        if x == target or y == target:
             return path + ["Success"]
         
         next_states = []
