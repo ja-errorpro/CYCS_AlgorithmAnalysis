@@ -110,7 +110,8 @@ def honer( funct, var ) : # 用於把數字帶入的多項式是解, funct 是�
         if prePower == 0  : # 若前項是常數，代表整個多項式是常數，故直接return 值就好
             return [funct[0][0], 0 ]
         elif ( len(funct) == 1 ): # 若只有一項
-            return [num * (var**prePower), 0] # 直接計算本項結果並回傳
+            print(var**prePower ) 
+            return [num * (var**prePower), 0 ] # 直接計算本項結果並回傳
         elif ( i != 0 ) : # 若並非第一項
             num = num * (var**(prePower - funct[i][1] )) + funct[i][0]  # 數值為前數 * (上次方 - 下次方)的變數次方，再加上此項係數
             prePower = funct[i][1] # 更新prepower為此項
@@ -309,5 +310,3 @@ def main() :
         
                 
 main()
-
-
