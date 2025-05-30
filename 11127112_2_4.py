@@ -200,7 +200,7 @@ def main():
     if ( direction == "1") :
         for i in range(canvas_w):
             h = seam[i] + heightUP
-            mask[:h, i] = 255
+            mask[:h, i] = 255 
     else :
         for i in range(canvas_h):
             w = seam[i] + widthUP
