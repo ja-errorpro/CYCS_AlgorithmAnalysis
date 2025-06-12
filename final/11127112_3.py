@@ -42,7 +42,7 @@ while True:
                 bfsx.append(nx)
                 bfsy.append(ny)
 
-    print(ans)
+    print(f'From {start} to {end}, Knight Moves = {ans}')
     '''
     if ans > 0 or (start_x == end_x and start_y == end_y):
         path = []
